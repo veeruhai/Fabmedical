@@ -75,8 +75,8 @@ jobs:
         manifests: |
           web.deployment.yml
           web.service.yml
-      images: |
-        ${{ env.containerRegistry }}.azurecr.io/${{ env.imageRepository }}:${{ env.tag }}
-      imagepullsecrets: |
-        ingress-demo-secret
-      namespace: ingress-demo
+        images: |
+          ${{ env.containerRegistry }}.azurecr.io/${{ env.imageRepository }}:${{ env.tag }}
+        imagepullsecrets: |
+          ingress-demo-secret
+        namespace: ingress-demo
